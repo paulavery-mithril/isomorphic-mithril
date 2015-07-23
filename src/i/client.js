@@ -4,7 +4,7 @@ import request from '../request/client';
 export default function(m) {
 	return {
 		browser: true,
-		error: (code) => {throw new Error(code); },
+		error: () => window.location.replace(m.route()),
 		param: m.route.param,
 		request: request(m),
 		startComputation: m.startComputation,

@@ -99,7 +99,7 @@ One of the nicest things about mithril is the way it handles asynchronous events
 Simple boolean specifying in which environment the code is running
 
 #### i.error()
-Throws an error in the browser and on the server calls `.throw()` on the current koa context. Useful to throw errors on the server, if e.g. the requested route does not exist.
+Calls `.throw()` on the current koa context. Useful to throw errors on the server, if e.g. the requested route does not exist. On the client it just straight up opens the current route. This allows you to use server side error pages.
 
 #### i.param()
 Works like `m.param()` on the client as well as on the server.
