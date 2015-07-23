@@ -1,0 +1,7 @@
+{
+	"sourceMaps": "inline",
+	"blacklist": [
+		"regenerator"
+	]
+}
+

@@ -1,0 +1,53 @@
+{
+  "name": "isomorphic-mithril",
+  "version": "1.0.0",
+  "author": "Florian Albertz",
+  "license": "BSD-3-Clause",
+  "main": "lib/server.js",
+  "browser": "lib/client.js",
+  "description": "Isomorphic mithril via Koa.js",
+  "keywords": [
+    "mithril",
+    "isomorphic",
+    "koa",
+    "koajs",
+    "mithril.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PaulAvery/node-isomorphic-mithril.git"
+  },
+  "dependencies": {
+    "koa": "^0.21.0",
+    "mithril": "lhorie/mithril.js#next",
+    "superagent": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^0.18.0",
+    "version-bump": "^0.1.0",
+    "babel": "^5.6.14"
+  },
+  "scripts": {
+    "test": "make lint",
+    "prepublish": "make && make lint"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "rules": {
+      "curly": [
+        2,
+        "multi-line"
+      ],
+      "quotes": [
+        2,
+        "single"
+      ]
+    },
+    "ecmaFeatures": {
+      "modules": true
+    }
+  }
+}
