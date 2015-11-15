@@ -1,7 +1,4 @@
 {
 	"sourceMaps": "inline",
-	"blacklist": [
-		"regenerator"
-	]
+	"presets": ["es2015"]
 }
-
