@@ -2,7 +2,7 @@ import Koa from 'koa';
 import http from 'http';
 import Views from './server/Views';
 
-export default class Isomorphic extends Koa {
+class Isomorphic extends Koa {
 	constructor() {
 		super();
 		this.views = new Views();
@@ -23,3 +23,5 @@ export default class Isomorphic extends Koa {
 		return server;
 	}
 }
+
+export default Isomorphic;
