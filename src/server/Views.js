@@ -11,9 +11,9 @@ function extractParams(route, path) {
 		let keys = route.path.match(/:[^\/]+/g) || [];
 		let values = [].slice.call(arguments, 1, -2);
 
-		keys.forEach((key, i) => {
+		keys.forEach((key, j) => {
 			let rawKey = key.replace(/:|\./g, '');
-			params[rawKey] = decodeURIComponent(values[i]);
+			params[rawKey] = decodeURIComponent(values[j]);
 		});
 	});
 

@@ -1,5 +1,4 @@
 /* eslint-env browser */
-import m from 'mithril';
 import i from './i/client';
 import prepareComponent from './prepare';
 

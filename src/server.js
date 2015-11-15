@@ -1,5 +1,4 @@
 import Koa from 'koa';
-import http from 'http';
 import Views from './server/Views';
 
 class Isomorphic extends Koa {
